@@ -116,7 +116,7 @@ Hands-on practice quest #00: prerequisites sound-check (15+5)
 - Hint: [docker cli reference](https://docs.docker.com/engine/reference/commandline/docker/)
 - Hint: при работе в терминале используйте `Tab` и `↑` для автоподстановки значений
 
-- [ ] "Как описать сценарий использования команд?"
+- [+] "Как описать сценарий использования команд?"
 ```shell
 В общем случае:
 - предварительные команды подготовки системы к действию
