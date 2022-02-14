@@ -4,18 +4,24 @@ Intro to Docker
 
 Prerequisites
 =============
-- [ ] RAM ≥ 4Gb
-- [ ] RHEL8
-- [ ] Права локального админа для аккаунта участника {{ account }}
-- [ ] Доступен git repo с данным руководством {{ git-repo }} `gitlabci.raiffeisen.ru/container-trainings/training-docker`
-- [ ] Доступен корпоративный Docker {{ registry-host }} `artifactory.raiffeisen.ru`
-- [ ] Доступен корпоративный Docker {{ soft-registry }} с образами прикладного ПО `{{ registry-host }}/ext-rbru-techimage-docker`
-- [ ] Доступен корпоративный Docker {{ os-registry }} с образами ОС `{{ registry-host }}/ext-rbru-osimage-docker`
-- [ ] Доступен корпоративный Docker {{ project-registry }} учебного проекта `{{ registry-host }}/container-training-docker`
-- [ ] Доступен дистрибутив рабочего приложения {{ app-distr }} `{{ registry-host }}/artifactory/container-training-docker/dbo-1.0-SNAPSHOT.jar`
-- [ ] Доступен исходный проект рабочего приложения {{ app-src }} `{{ registry-host }}/artifactory/container-training-docker/dbo-1.0-SNAPSHOT-sources.jar`
-- [ ] Доступен необходимый компонент рабочего приложения {{ app-stub }} `{{ registry-host }}/artifactory/repo1-cache/com/github/tomakehurst/wiremock-standalone/2.27.2/wiremock-standalone-2.27.2.jar`
-- [ ] Установлен DockerCE или совместимый менеджер контейнеров (e.g. Podman)
+- [+] RAM ≥ 4Gb
+- [+] RHEL8
+- [+] Права локального админа для аккаунта участника {{ account }}
+- [+] Доступен git repo с данным руководством {{ git-repo }} `gitlabci.raiffeisen.ru/container-trainings/training-docker`
+- [+] Доступен корпоративный Docker {{ registry-host }} `artifactory.raiffeisen.ru`
+- [+] Доступен корпоративный Docker {{ soft-registry }} с образами прикладного ПО `{{ registry-host }}/ext-rbru-techimage-docker`
+      `artifactory.raiffeisen.ru/ext-rbru-techimage-docker`
+- [+] Доступен корпоративный Docker {{ os-registry }} с образами ОС `{{ registry-host }}/ext-rbru-osimage-docker`
+      `artifactory.raiffeisen.ru/ext-rbru-techimage-docker/ext-rbru-osimage-docker`
+- [+] Доступен корпоративный Docker {{ project-registry }} учебного проекта `{{ registry-host }}/container-training-docker`
+      `artifactory.raiffeisen.ru/container-training-docker`
+- [+] Доступен дистрибутив рабочего приложения {{ app-distr }} `{{ registry-host }}/artifactory/container-training-docker/dbo-1.0-SNAPSHOT.jar`
+      `artifactory.raiffeisen.ru/artifactory/container-training-docker/dbo-1.0-SNAPSHOT.jar`
+- [+] Доступен исходный проект рабочего приложения {{ app-src }} `{{ registry-host }}/artifactory/container-training-docker/dbo-1.0-SNAPSHOT-sources.jar`
+      `artifactory.raiffeisen.ru/artifactory/container-training-docker/dbo-1.0-SNAPSHOT-sources.jar`
+- [+] Доступен необходимый компонент рабочего приложения {{ app-stub }} `{{ registry-host }}/artifactory/repo1-cache/com/github/tomakehurst/wiremock-standalone/2.27.2/wiremock-standalone-2.27.2.jar`
+      `artifactory.raiffeisen.ru/artifactory/repo1-cache/com/github/tomakehurst/wiremock-standalone/2.27.2/wiremock-standalone-2.27.2.jar`
+- [+] Установлен DockerCE или совместимый менеджер контейнеров (e.g. Podman)
 ```shell
 sudo dnf install -y docker
 ```
@@ -98,13 +104,13 @@ container #--# host : "port\nmapping"
 
 Hands-on practice quest #00: prerequisites sound-check (15+5)
 ---------------------------
-- [ ] Given 
+- [+] Given 
 - сделан форк данного руководства для собственных пометок
 - форк открыт в браузере для внесения пометок 
 - для последующей удобной работы с copy+paste для ресурсов раздела [Prerequisites](#Prerequisites) плейсхолдеры `{...}` заменены актуальными значениями
 - все команды Docker запускаются из-под `sudo ...` или в сессии `sudo su -`
 
-- [ ] Сформированы пары участников с чередованием ролей в паре 
+- [+] Сформированы пары участников с чередованием ролей в паре 
 - Hint: синонимы команд docker cli
 - Hint: `... --help`
 - Hint: [docker cli reference](https://docs.docker.com/engine/reference/commandline/docker/)
